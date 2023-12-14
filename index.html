@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Resume Generator</title>
+</head>
+<body>
+  <div class="task-manager">
+      <h1>
+        <span class="material-symbols-outlined">
+          network_intelligence_history
+        </span>
+        Smart- Task Manager
+      </h1>
+      <div class="input-container">
+          
+          <input type="text" id="taskInput" placeholder="Enter task">
+          
+          <input type="text" id="categoryInput" placeholder="Enter category">
+          
+          <input type="date" id="dueDateInput">
+          <button onclick="addTask()">
+            <span class="material-symbols-outlined">
+              add_task
+              </span>
+            </button>
+      </div>
+      <ul id="taskList"></ul>
+      <button onclick="downloadTasks()">Download Tasks</button>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./javascript/index.js"></script>
+</body>
+</html>
